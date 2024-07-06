@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="text/javascript" src="/index.js" async></script>
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+  <main class="signup" id="signup">
+
+    <div class="text">
+      <h1 class="heading">Stay updated!</h1>
+      <p class="paraText">Join 60,000+ product managers receiving monthly updates on:</p> <br>
+      <div class="points">
+        <img src="/assets/images/icon-list.svg" alt="tick_img" class="tick_mark">
+        <span class="para">Product discovery and building what matters</span><br>
+      </div>
+      <div class="points">
+        <img src="/assets/images/icon-list.svg" alt="tick_img" class="tick_mark">
+        <span class="para">Measuring to ensure updates are a success</span> <br>
+      </div>
+      <div class="points" id="last_point">
+        <img src="/assets/images/icon-list.svg" alt="tick_img" class="tick_mark">
+        <span class="para"> And much more!</span><br>
+      </div>
+      <p class="emailInput" id="emailInput">Email Address<span id="textOnError"></span></p>
+      <form class="form" id="form">
+        <input type="text" class="input_box" id="input_box" placeholder="email@company.com" required>
+        <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="img">
+    </div>
+
+  </main>
+
+  <div class="success" id="success">
+    <div class="sucess_main" id="sucess_main">
+      <img src="/assets/images/icon-success.svg" alt="success" class="success_img" id="success_img" />
+      <h1 class="success_heading">Thanks for subscribing!</h1>
+      <p class="success_msg">
+        A confirmation email has been sent to <strong><span class="email_after_success"
+            id="email_after_success">ash@loremcompany.com</span></strong>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    <button class="dismiss_btn" id="dismiss_btn">Dismiss message</button>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.signup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: min-content;
+    width: 840px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 20px 20px 20px 60px;
+    border-radius: 35px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 60px;
+    color: hsl(234, 29%, 20%);
+}
+
+div.img {
+    height: 593px;
+    width: 770px;
+    background-image: url("/assets/images/illustration-sign-up-desktop.svg");
+    margin-left: 35px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+
+.text {
+    line-height: 30px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.points {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.para {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.email {
+    margin-bottom: 0;
+}
+
+
+#input_box {
+    height: 40px;
+    width: 365px;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.emailInput {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+#input_box::placeholder {
+    color: rgb(111, 106, 106);
+}
+
+
+#textOnError {
+    margin-left: 175px;
+    color: hsl(4, 100%, 67%);
+    font-size: small;
+}
+
+.btn {
+    margin: 10px auto;
+    height: 50px;
+    width: 385px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: hsl(235, 18%, 26%);
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+}
+
+#input_box_error {
+    height: 40px;
+    width: 365px;
+    border-radius: 5px;
+    padding-left: 15px;
+    color: rgb(255, 25, 25);
+    background-color: hsl(2, 100%, 95%);
+    border: 1px solid hsl(4, 100%, 67%);
+    margin-bottom: 15px;
+}
+
+
+#input_box_error::placeholder {
+    color: rgb(248, 157, 157);
+}
+
+
+
+
+/* to remove default border styles of input tag */
+input[type="text"] {
+    border: none;
+    outline: none;
+    border: 2px solid hsl(231, 7%, 60%);
+}
+
+
+
+
+
+/* After Success Styles */
+.success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 440px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.sucess_main {
+    margin: 20px 20px 0 20px;
+}
+
+.success_img {
+    height: 56px;
+    margin: 0;
+}
+
+.success_heading {
+    font-weight: 700;
+    font-size: 60px;
+    color: hsl(234, 29%, 20%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.success_msg {
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+    font-weight: 200;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+.email_after_success {
+    color: hsl(234, 29%, 20%);
+}
+
+.dismiss_btn {
+    margin: 10px auto;
+    height: 50px;
+    width: 360px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: hsl(235, 18%, 26%);
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 29px;
+}
+
+.dismiss_btn:hover {
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+}
+
+/* ---------------------------------------------------------------- */
+@media (max-width: 1000px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .signup {
+        height: 100%;
+        width: 80%;
+        background-color: hsl(0, 0%, 100%);
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+
+    div.img {
+        background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0%;
+        left: 20%;
+    }
+
+    .heading {
+        font-size: 58px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        width: 70%;
+        padding-top: 290px;
+        position: absolute;
+        top: 0%;
+        left: 18%;
+        line-height: 1.5;
+    }
+
+    .tick_mark {
+        margin-bottom: 20px;
+        margin-right: 10px;
+
+    }
+
+    .points {
+        margin-bottom: 8px;
+        font-size: 30px;
+    }
+
+    .paraText{
+        font-size: 20px;
+    }
+
+    #last_point {
+        margin-bottom: 0;
+    }
+
+
+    .para {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #textOnError {
+        margin-left: 200px;
+        color: hsl(4, 100%, 67%);
+        font-size: 14px;
+    }
+
+    #input_box {
+        height: 60px;
+        width: 380px;
+        border-radius: 10px;
+        border-style: solid;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    #input_box::placeholder {
+        font-size: 16px;
+    }
+
+
+    #input_box_error {
+        height: 60px;
+        width: 380px;
+        border-radius: 10px;
+        padding-left: 30px;
+        color: rgb(255, 25, 25);
+        background-color: hsl(2, 100%, 95%);
+        border: 1px solid hsl(4, 100%, 67%);
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin: 10px auto;
+        margin-bottom: 30px;
+        height: 70px;
+        width: 415px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    .emailInput{
+        font-size: 14px;
+    }
+
+
+
+    /* CSS for success State */
+    .sucess_main {
+        height: max-content;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .success_heading {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+
+    .dismiss_btn {
+        position: absolute;
+        bottom: 1%;
+        margin: 10px 35px;
+        height: 60px;
+        width: 325px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+} 
+
+/* ---------------------------------------------------------------- */
+@media (max-width: 800px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .signup {
+        height: 100%;
+        width: 80%;
+        background-color: hsl(0, 0%, 100%);
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+
+    div.img {
+        background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0%;
+        left: 20%;
+    }
+
+    .heading {
+        font-size: 58px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        padding-top: 250px;
+        position: absolute;
+        top: 0%;
+        left: 18%;
+        line-height: 1.5;
+    }
+
+    .tick_mark {
+        margin-bottom: 20px;
+        margin-right: 10px;
+
+    }
+
+    .points {
+        margin-bottom: 8px;
+        font-size: 30px;
+    }
+
+    .paraText{
+        font-size: 20px;
+    }
+
+    #last_point {
+        margin-bottom: 0;
+    }
+
+
+    .para {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #textOnError {
+        margin-left: 145px;
+        color: hsl(4, 100%, 67%);
+        font-size: 14px;
+    }
+
+    #input_box {
+        height: 60px;
+        width: 325px;
+        border-radius: 10px;
+        border-style: solid;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    #input_box::placeholder {
+        font-size: 16px;
+    }
+
+
+    #input_box_error {
+        height: 60px;
+        width: 325px;
+        border-radius: 10px;
+        padding-left: 30px;
+        color: rgb(255, 25, 25);
+        background-color: hsl(2, 100%, 95%);
+        border: 1px solid hsl(4, 100%, 67%);
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .emailInput{
+        font-size: 14px;
+    }
+
+    .btn {
+        margin: 10px auto;
+        margin-bottom: 30px;
+        height: 60px;
+        width: 365px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+
+
+    /* CSS for success State */
+    .sucess_main {
+        height: max-content;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .success_heading {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+
+    .dismiss_btn {
+        position: absolute;
+        bottom: 1%;
+        margin: 10px 35px;
+        height: 60px;
+        width: 325px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+} 
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 500px){
+    body {
+        background-color: hsl(0, 0%, 100%);
+        overflow-x: hidden;
+    }
+
+    .signup {
+        height: 100%;
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    div.img {
+        background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0%;
+        left: 5%;
+    }
+
+    .heading {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        padding-top: 290px;
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        line-height: 1.5;
+    }
+
+    .tick_mark {
+        margin-bottom: 20px;
+        margin-right: 10px;
+
+    }
+
+    .points {
+        margin-bottom: 8px;
+        font-size: 25px;
+    }
+
+    #last_point {
+        margin-bottom: 0;
+    }
+
+    .paraText{
+        font-size: 15px;
+    }
+
+
+    .para {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    #textOnError {
+        margin-left: 80px;
+        color: hsl(4, 100%, 67%);
+        font-size: small;
+    }
+
+    #input_box {
+        height: 60px;
+        width: 260px;
+        border-radius: 10px;
+        border-style: solid;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    #input_box::placeholder {
+        font-size: 16px;
+    }
+
+
+    #input_box_error {
+        height: 60px;
+        width: 260px;
+        border-radius: 10px;
+        padding-left: 30px;
+        color: rgb(255, 25, 25);
+        background-color: hsl(2, 100%, 95%);
+        border: 1px solid hsl(4, 100%, 67%);
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin: 10px auto;
+        margin-bottom: 30px;
+        height: 60px;
+        width: 295px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+
+
+    /* CSS for success State */
+    .sucess_main {
+        height: max-content;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .success_heading {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+
+    .dismiss_btn {
+        position: absolute;
+        bottom: -10%;
+        margin: 10px 35px;
+        height: 60px;
+        width: 325px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+}
+
+
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 400px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+        overflow-x: hidden;
+    }
+
+    .signup {
+        height: 100%;
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        padding-top: 500px;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    div.img {
+        background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0;
+        position: absolute;
+        top: 0%;
+        left: 2.5%;
+    }
+
+    .heading {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        padding-top: 255px;
+        position: absolute;
+        left: 6%;
+        right: 5%;
+        line-height: 1.5;
+    }
+
+    .tick_mark {
+        margin-bottom: 20px;
+        margin-right: 10px;
+
+    }
+
+    .points {
+        margin-bottom: 8px;
+    }
+
+    #last_point {
+        margin-bottom: 0;
+    }
+
+
+    .para {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .paraText{
+        font-size: 15px;
+    }
+
+    #textOnError {
+        margin-left: 70px;
+        color: hsl(4, 100%, 67%);
+        font-size: small;
+    }
+
+    #input_box {
+        height: 50px;
+        width: 230px;
+        border-radius: 10px;
+        border-style: solid;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    #input_box::placeholder {
+        font-size: 16px;
+    }
+
+
+    #input_box_error {
+        height: 50px;
+        width: 230px;
+        border-radius: 10px;
+        padding-left: 30px;
+        color: rgb(255, 25, 25);
+        background-color: hsl(2, 100%, 95%);
+        border: 1px solid hsl(4, 100%, 67%);
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin: 10px auto;
+        margin-bottom: 30px;
+        height: 60px;
+        width: 265px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+
+
+    /* CSS for success State */
+    .sucess_main {
+        height: max-content;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .success_heading {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+
+    .dismiss_btn {
+        position: absolute;
+        bottom: -10%;
+        margin: 10px 35px;
+        height: 60px;
+        width: 325px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+@media (max-width: 376px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+        overflow-x: hidden;
+    }
+
+    .signup {
+        height: 100%;
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        padding-top: 500px;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    div.img {
+        background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .heading {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        width: 90%;
+        margin: 20px;
+        padding-top: 255px;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        line-height: 1.5;
+    }
+
+    .tick_mark {
+        margin-bottom: 20px;
+        margin-right: 10px;
+
+    }
+
+    .points {
+        margin-bottom: 8px;
+    }
+
+    #last_point {
+        margin-bottom: 0;
+    }
+
+
+    .para {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #textOnError {
+        margin-left: 130px;
+        color: hsl(4, 100%, 67%);
+        font-size: small;
+    }
+
+    #input_box {
+        height: 60px;
+        width: 290px;
+        border-radius: 10px;
+        border-style: solid;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    #input_box::placeholder {
+        font-size: 16px;
+    }
+
+
+    #input_box_error {
+        height: 60px;
+        width: 290px;
+        border-radius: 10px;
+        padding-left: 30px;
+        color: rgb(255, 25, 25);
+        background-color: hsl(2, 100%, 95%);
+        border: 1px solid hsl(4, 100%, 67%);
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin: 10px auto;
+        margin-bottom: 30px;
+        height: 60px;
+        width: 325px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+
+
+    /* CSS for success State */
+    .sucess_main {
+        height: max-content;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .success_heading {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+
+    .dismiss_btn {
+        position: absolute;
+        bottom: -10%;
+        margin: 10px 35px;
+        height: 60px;
+        width: 325px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}
+
+
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 361px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    #textOnError {
+        margin-left: 90px;
+        color: hsl(4, 100%, 67%);
+        font-size: small;
+    }
+
+    #input_box {
+        height: 40px;
+        width: 260px;
+        border-radius: 10px;
+        border-style: solid;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+
+    }
+
+    #input_box::placeholder {
+        font-size: 16px;
+    }
+
+
+    #input_box_error {
+        height: 40px;
+        width: 260px;
+        border-radius: 10px;
+        padding-left: 30px;
+        color: rgb(255, 25, 25);
+        background-color: hsl(2, 100%, 95%);
+        border: 1px solid hsl(4, 100%, 67%);
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin: 10px auto;
+        margin-bottom: 30px;
+        height: 45px;
+        width: 300px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+
+    /* CSS for success state */
+    .sucess_main {
+        height: max-content;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .success_heading {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+
+    .dismiss_btn {
+        position: absolute;
+        bottom: -10%;
+        margin: 10px 35px;
+        height: 60px;
+        width: 325px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+@media (max-width: 340px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    #textOnError {
+        margin-left: 80px;
+        color: hsl(4, 100%, 67%);
+        font-size: small;
+    }
+
+    #input_box {
+        height: 40px;
+        width: 240px;
+        border-radius: 10px;
+        border-style: solid;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+
+    }
+
+    #input_box::placeholder {
+        font-size: 16px;
+    }
+
+
+    #input_box_error {
+        height: 40px;
+        width: 240px;
+        border-radius: 10px;
+        padding-left: 30px;
+        color: rgb(255, 25, 25);
+        background-color: hsl(2, 100%, 95%);
+        border: 1px solid hsl(4, 100%, 67%);
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin: 10px auto;
+        margin-bottom: 30px;
+        height: 45px;
+        width: 275px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+
+    /* CSS for success state */
+    .sucess_main {
+        padding: 50px;
+    }
+
+    .success_heading {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+
+    .dismiss_btn {
+        position: absolute;
+        bottom: -10%;
+        margin-bottom: 70px;
+        margin-left: 65px;
+        height: 40px;
+        width: 270px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: hsl(235, 18%, 26%);
+        background-color: hsl(235, 18%, 26%);
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+}
+
+/* ---------------------------------------------------------------- */
